@@ -8,14 +8,14 @@ pipeline {
      string(name:'TAG_NAME',defaultValue: '',description:'')
   }
   environment {
-    DOCKER_REPO_CREDENTIAL_ID = 'docker-repo-id'
-    GIT_CREDENTIAL_ID = 'git-id'
+    DOCKER_REPO_CREDENTIAL_ID = 'dockerhub-id'
+    GIT_CREDENTIAL_ID = 'github-id'
     KUBECONFIG_CREDENTIAL_ID = 'demo-kubeconfig'
-    DOCKER_REPO_NAMESPACE = 'kubesphere'
-    GIT_ACCOUNT = 'kubesphere'
+    DOCKER_REPO_NAMESPACE = 'tianxiaogang123'
+    GIT_ACCOUNT = 'xiaogang12'
     APP_NAME = 'devops-go-sample'
-    DOCKER_REPO_ADDRESS = 'harbor.devops.kubesphere.local:30280'
-    GIT_ADDRESS = 'gitlab.devops.kubesphere.local:30080'
+    DOCKER_REPO_ADDRESS = 'hub.docker.com'
+    GIT_ADDRESS = 'github.com'
   }
   stages {
     stage('checkout scm') {
